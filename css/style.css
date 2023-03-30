@@ -1,0 +1,155 @@
+/*reset css para tirar todas as margens dos elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+box{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(217, 120, 120);
+}
+
+/*estilização do header*/
+.cabecalho{
+    background-color: rgb(190, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho > img{
+    height: 60px;
+    padding-left: 25px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.menu > li:hover{
+    background-color: rgb(213, 82, 42);
+}
+
+/*estilizando o nosso banner*/
+.pagina1{
+    height: 400px;
+    background-image: url(../img/pizza.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: top center;
+    box-shadow:  0 4px 10px rgb(12, 108, 12);
+}
+.pagina1 > h1{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+.pagina1 > a{
+        padding: 9px 18px;
+        color: aliceblue;
+        text-decoration: none;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+}
+
+.corpo-pagina{
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.corpo-pagina > h2{
+    color: rgb(12, 108, 12);
+}
+.corpo-pagina > hr{
+    border: none;
+    background: rgb(199, 7, 7);
+    background: rgb(251,115,0);
+    background: rgb(255,255,255);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(210,0,11,1) 50%, rgba(255,255,255,0) 100%);
+    height: 3px;
+    width: 10px 20px;
+}
+.sabores{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sabor{
+    margin: 10px;
+    background-color: rgb(213, 82, 42);
+    text-align: center;  
+    max-width: 250px;
+}
+.nome{
+    color: white;
+}
+.preco{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(94, 148, 53);
+    color: rgb(255, 255, 171);
+}
+.sabor > img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.sabor{
+    margin: 10px;
+    max-width:250px ;
+    min-width: 250px;
+    box-shadow: 0px 3px 10px ;
+    border-radius: 15px 15px 0 0;
+}
+.promoçoes{
+    display: flex;
+    overflow: scroll;
+}
+.promoçoes::-webkit-scrollbar{
+    display: none;
+}
+/*estilizando o rodapé - footer*/
+.rodape{
+    background-color: rgb(190, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px green;
+}
+.endereço{
+    color: white;
+}
+.social > ul > li > a{
+    color:white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+@media (max-width:500px){
+    .sabores{
+        flex-direction: row;
+        margin: 10px;
+    }
+    .sabor{
+        min-width: 100%;
+    }
+}
